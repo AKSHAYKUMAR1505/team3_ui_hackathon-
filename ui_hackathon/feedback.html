@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <img src="images/amrita.png" alt="Amrita Vishwa Vidyapeetham logo">
+            <div>
+                <h1>Feedback</h1>
+                <p>Campus Sports Meet 2026</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sports.html">Sports Events</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Feedback Form</h2>
+            <p id="feedbackMessage" class="message"></p>
+            <form id="feedbackForm">
+                <label>Student Name
+                    <input type="text" id="feedbackName" required>
+                </label>
+
+                <label>Register Number
+                    <input type="text" id="feedbackRegister" required>
+                </label>
+
+                <label>Event Attended
+                    <select id="feedbackEvent" required></select>
+                </label>
+
+                <label>Rating
+                    <select id="rating" required>
+                        <option value="">Select rating</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+
+                <label>Comments
+                    <textarea id="comments" rows="5" maxlength="20" required></textarea>
+                </label>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Feedback Summary</h2>
+            <p>Total Feedbacks: <strong id="totalFeedback">0</strong></p>
+            <p>Average Rating: <strong id="averageRating">0</strong></p>
+            <div id="feedbackList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Amrita Campus Sports Committee</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

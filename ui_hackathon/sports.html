@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <img src="images/amrita.png" alt="Amrita Vishwa Vidyapeetham logo">
+            <div>
+                <h1>Sports Events</h1>
+                <p>Campus Sports Meet 2026</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sports.html">Sports Events</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Available Events</h2>
+            <div id="eventList" class="grid"></div>
+        </section>
+
+        <section>
+            <h2>Student Participation Form</h2>
+            <p id="participationMessage" class="message"></p>
+            <form id="participationForm">
+                <label>Student Name
+                    <input type="text" id="studentName" required>
+                </label>
+
+                <label>Register Number
+                    <input type="text" id="registerNumber" placeholder="AM.EN.U4CSE23001" required>
+                </label>
+
+                <label>Email ID
+                    <input type="email" id="email" required>
+                </label>
+
+                <label>Mobile Number
+                    <input type="text" id="mobile" maxlength="10" required>
+                </label>
+
+                <label>Department
+                    <input type="text" id="department" required>
+                </label>
+
+                <label>Year of Study
+                    <select id="year" required>
+                        <option value="">Select year</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </label>
+
+                <label>Event
+                    <select id="eventSelect" required></select>
+                </label>
+
+                <label>Participation Type
+                    <select id="participationType" required>
+                        <option value="">Select type</option>
+                        <option>Individual</option>
+                        <option>Team</option>
+                    </select>
+                </label>
+
+                <label class="team-field">Team Name
+                    <input type="text" id="teamName">
+                </label>
+
+                <label class="team-field">Number of Team Members
+                    <input type="number" id="teamMembers" min="2" max="6">
+                </label>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Amrita Campus Sports Committee</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
